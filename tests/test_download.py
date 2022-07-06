@@ -1,9 +1,9 @@
 import os
+import shutil
 import tempfile
 from page_loader.download import download
-from unittest.mock import Mock
-import requests
 import requests_mock
+from page_loader.download import download_resources
 
 def test_downlad():
     with tempfile.TemporaryDirectory() as tmpdirname:
@@ -19,3 +19,31 @@ def test_for_each():
             m.get(url)
             download(url, temp_path)
         assert m.call_count == 1
+
+def test_img():
+    result_path = 'tests/fixtures/img_test_after.html'
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('tests/fixtures/img_test_before.html', tmpfilename.name)
+        url =  'https://ru.hexlet.io/courses'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        download_resources(temp_path_file,  url, dir)
+        with open(temp_path_file) as rslt:
+            with open(result_path) as result:
+                assert rslt.read() == result.read()
+
+
+def test_img_files():
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('tests/fixtures/img_test_before.html', tmpfilename.name)
+        url =  'https://ru.hexlet.io/courses'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        download_resources(temp_path_file,  url, dir)
+        results = []
+        for _,_,filenames in os.walk(dir):
+            for file in filenames:
+                fileExt=os.path.splitext(file)[-1]
+                if fileExt == '.png' or fileExt == '.svg' or fileExt == '.jpg':
+                    results.append(file)
+        assert results != []
