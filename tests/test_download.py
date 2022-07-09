@@ -47,3 +47,31 @@ def test_img_files():
                 if fileExt == '.png' or fileExt == '.svg' or fileExt == '.jpg':
                     results.append(file)
         assert results != []
+
+
+def test_link_script():
+    result_path = 'tests/fixtures/link_script_after.html'
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('tests/fixtures/link_script_before.html', tmpfilename.name)
+        url =  'https://ru.hexlet.io/courses'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        download_resources(temp_path_file,  url, dir)
+        with open(temp_path_file) as rslt:
+            with open(result_path) as result:
+                assert rslt.read() == result.read()
+
+def test_link_script_files():
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('tests/fixtures/link_script_before.html', tmpfilename.name)
+        url =  'https://ru.hexlet.io/courses'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        download_resources(temp_path_file,  url, dir)
+        results = []
+        for _,_,filenames in os.walk(dir):
+            for file in filenames:
+                fileExt=os.path.splitext(file)[-1]
+                if fileExt == '.css':
+                    results.append(file)
+        assert results != []

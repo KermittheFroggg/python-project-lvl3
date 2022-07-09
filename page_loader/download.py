@@ -16,14 +16,26 @@ def finding_scheme(src, url):
     urlapass = urlparse(src)
     urlapass_url = urlparse(url)
     if urlapass.scheme != '' and urlapass.netloc != '':
-        resource_path, ending = os.path.splitext(src)
+        if urlapass_url.netloc == urlapass.netloc:
+            resource_path, ending = os.path.splitext(src)
+            if ending == '':
+                ending = '.html'
+        else:
+            resource_path, ending = '', ''
     elif urlapass.scheme == '' and urlapass.netloc == '':
         resource_path, ending = os.path.splitext(src)
         resource_path = urlapass_url.scheme + '://' + \
             urlapass_url.netloc + resource_path
+        if ending == '':
+            ending = '.html'
     elif urlapass.scheme == '' and urlapass.netloc != '':
-        resource_path, ending = os.path.splitext(src)
-        resource_path = urlapass_url.scheme + '://' + resource_path
+        if urlapass_url.netloc == urlapass.netloc:
+            resource_path, ending = os.path.splitext(src)
+            resource_path = urlapass_url.scheme + ':' + resource_path
+            if ending == '':
+                ending = '.html'
+        else:
+            resource_path, ending = '', ''
     return resource_path, ending
 
 
@@ -41,21 +53,79 @@ def download_resources(file_path, url, path):
     with open(file_path) as fp:
         soup = BeautifulSoup(fp, 'html.parser')
         all_img = soup.find_all('img')
+        all_links = soup.find_all('link')
+        all_scripts = soup.find_all('script')
         resources_path = url_t_file_path(url) + '_files'
         Path(os.path.join(path, resources_path)).mkdir(exist_ok=True)
         for img in all_img:
-            if img.has_attr('src'):
-                src = img['src']
-                resource_path, ending = finding_scheme(src, url)
-                r = requests.get(resource_path + ending, allow_redirects=True)
-                image = r.content
-                res_path_url = (
-                    os.path.join(resources_path, url_t_file_path(resource_path))
-                )
-                resource_path2 = os.path.join(path, res_path_url + ending)
-                with open(resource_path2, 'wb') as fp:
-                    fp.write(image)
-                new_image_path = os.path.join(res_path_url + ending)
-                img['src'] = new_image_path
+            img_new_path = download_img(img, url, resources_path, path)
+            if img_new_path != '':
+                img['src'] = img_new_path
+        for link in all_links:
+            link_new_path = download_link(link, url, resources_path, path)
+            if link_new_path != '':
+                link['href'] = link_new_path
+        for script in all_scripts:
+            script['src'] = download_script(script, url, resources_path, path)
     with open(file_path, 'w') as fp:
         fp.write(soup.prettify())
+
+
+def download_img(img, url, resources_path, path):
+    if img.has_attr('src'):
+        src = img['src']
+        resource_path, ending = finding_scheme(src, url)
+        if resource_path != '' and ending != '':
+            r = requests.get(resource_path + ending, allow_redirects=True)
+            image = r.content
+            res_path_url = (
+                os.path.join(resources_path, url_t_file_path(resource_path))
+            )
+            plus_ending = res_path_url + ending
+            resource_path2 = os.path.join(path, plus_ending)
+            with open(resource_path2, 'wb') as fp:
+                fp.write(image)
+            new_image_path = os.path.join(plus_ending)
+            return new_image_path
+        else:
+            return src
+
+
+def download_link(link, url, resources_path, path):
+    if link.has_attr('href'):
+        src = link['href']
+        resource_path, ending = finding_scheme(src, url)
+        if resource_path != '' and ending != '':
+            r = requests.get(resource_path + ending, allow_redirects=True)
+            link_new = r.content
+            res_path_url = (
+                os.path.join(resources_path, url_t_file_path(resource_path))
+            )
+            plus_ending = res_path_url + ending
+            resource_path2 = os.path.join(path, plus_ending)
+            with open(resource_path2, 'wb') as fp:
+                fp.write(link_new)
+            new_link_path = os.path.join(plus_ending)
+            return new_link_path
+        else:
+            return src
+
+
+def download_script(script, url, resources_path, path):
+    if script.has_attr('src'):
+        src = script['src']
+        resource_path, ending = finding_scheme(src, url)
+        if resource_path != '' and ending != '':
+            r = requests.get(resource_path + ending, allow_redirects=True)
+            script_new = r.content
+            res_path_url = (
+                os.path.join(resources_path, url_t_file_path(resource_path))
+            )
+            plus_ending = res_path_url + ending
+            resource_path2 = os.path.join(path, plus_ending)
+            with open(resource_path2, 'wb') as fp:
+                fp.write(script_new)
+            new_script_path = os.path.join(plus_ending)
+            return new_script_path
+        else:
+            return src
