@@ -12,30 +12,32 @@ def url_t_file_path(url):
     return file_path
 
 
+def diff_netloc(urlapass_url_netloc, urlapass_netloc, src):
+    if urlapass_url_netloc == urlapass_netloc:
+        resource_path, ending = os.path.splitext(src)
+    else:
+        resource_path, ending = None, None
+    return resource_path, ending
+
+
 def finding_scheme(src, url):
     urlapass = urlparse(src)
     urlapass_url = urlparse(url)
     if urlapass.scheme != '' and urlapass.netloc != '':
-        if urlapass_url.netloc == urlapass.netloc:
-            resource_path, ending = os.path.splitext(src)
-            if ending == '':
-                ending = '.html'
-        else:
-            resource_path, ending = '', ''
+        resource_path, ending = \
+            diff_netloc(urlapass_url.netloc, urlapass.netloc, src)
     elif urlapass.scheme == '' and urlapass.netloc == '':
         resource_path, ending = os.path.splitext(src)
         resource_path = urlapass_url.scheme + '://' + \
             urlapass_url.netloc + resource_path
-        if ending == '':
-            ending = '.html'
     elif urlapass.scheme == '' and urlapass.netloc != '':
         if urlapass_url.netloc == urlapass.netloc:
             resource_path, ending = os.path.splitext(src)
             resource_path = urlapass_url.scheme + ':' + resource_path
-            if ending == '':
-                ending = '.html'
         else:
-            resource_path, ending = '', ''
+            resource_path, ending = None, None
+    if ending == '':
+        ending = '.html'
     return resource_path, ending
 
 
@@ -75,7 +77,7 @@ def download_img(img, url, resources_path, path):
     if img.has_attr('src'):
         src = img['src']
         resource_path, ending = finding_scheme(src, url)
-        if resource_path != '' and ending != '':
+        if resource_path is not None and ending is not None:
             r = requests.get(resource_path + ending, allow_redirects=True)
             image = r.content
             res_path_url = (
@@ -95,7 +97,7 @@ def download_link(link, url, resources_path, path):
     if link.has_attr('href'):
         src = link['href']
         resource_path, ending = finding_scheme(src, url)
-        if resource_path != '' and ending != '':
+        if resource_path is not None and ending is not None:
             r = requests.get(resource_path + ending, allow_redirects=True)
             link_new = r.content
             res_path_url = (
@@ -115,7 +117,7 @@ def download_script(script, url, resources_path, path):
     if script.has_attr('src'):
         src = script['src']
         resource_path, ending = finding_scheme(src, url)
-        if resource_path != '' and ending != '':
+        if resource_path is not None and ending is not None:
             r = requests.get(resource_path + ending, allow_redirects=True)
             script_new = r.content
             res_path_url = (
