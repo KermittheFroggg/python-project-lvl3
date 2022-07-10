@@ -77,11 +77,12 @@ def download_content(resource_path, ending, resources_path, path):
     r = requests.get(resource_path + ending, allow_redirects=True)
     content = r.content
     res_path_url = (
-            os.path.join(resources_path, url_t_file_path(resource_path))
-            )
+        os.path.join(resources_path, url_t_file_path(resource_path))
+    )
     plus_ending = res_path_url + ending
     resource_path2 = os.path.join(path, plus_ending)
     return resource_path2, plus_ending, content
+
 
 def download_img(img, url, resources_path, path):
     if img.has_attr('src'):
