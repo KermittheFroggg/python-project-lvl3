@@ -4,6 +4,7 @@ import tempfile
 from page_loader.download import download
 import requests_mock
 from page_loader.download import download_resources
+import logging
 
 def test_downlad():
     with tempfile.TemporaryDirectory() as tmpdirname:

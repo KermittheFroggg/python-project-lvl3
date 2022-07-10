@@ -8,8 +8,7 @@ import logging
 def main():
     logging.basicConfig(filename='loader.log',
                         filemode='a',
-                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s \
-                            %(message)s',
+                        format='%(asctime)s, %(levelname)s %(message)s',
                         level=logging.DEBUG,
                         )
     logging.info('Loader started')
