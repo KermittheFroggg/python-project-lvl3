@@ -73,57 +73,43 @@ def download_resources(file_path, url, path):
         fp.write(soup.prettify())
 
 
-def download_content(resource_path, ending, resources_path, path):
-    r = requests.get(resource_path + ending, allow_redirects=True)
-    content = r.content
-    res_path_url = (
-        os.path.join(resources_path, url_t_file_path(resource_path))
-    )
-    plus_ending = res_path_url + ending
-    resource_path2 = os.path.join(path, plus_ending)
-    return resource_path2, plus_ending, content
+def download_content(src, url, resources_path, path):
+    resource_path, ending = finding_scheme(src, url)
+    if resource_path is not None and ending is not None:
+        r = requests.get(resource_path + ending, allow_redirects=True)
+        content = r.content
+        res_path_url = (
+            os.path.join(resources_path, url_t_file_path(resource_path))
+        )
+        plus_ending = res_path_url + ending
+        resource_path2 = os.path.join(path, plus_ending)
+        with open(resource_path2, 'wb') as fp:
+            fp.write(content)
+        new_content_path = os.path.join(plus_ending)
+        return new_content_path
+    else:
+        return src
 
 
 def download_img(img, url, resources_path, path):
     if img.has_attr('src'):
         src = img['src']
-        resource_path, ending = finding_scheme(src, url)
-        if resource_path is not None and ending is not None:
-            resource_path2, plus_ending, content = \
-                download_content(resource_path, ending, resources_path, path)
-            with open(resource_path2, 'wb') as fp:
-                fp.write(content)
-            new_image_path = os.path.join(plus_ending)
-            return new_image_path
-        else:
-            return src
+        new_image_path = \
+            download_content(src, url, resources_path, path)
+        return new_image_path
 
 
 def download_link(link, url, resources_path, path):
     if link.has_attr('href'):
         src = link['href']
-        resource_path, ending = finding_scheme(src, url)
-        if resource_path is not None and ending is not None:
-            resource_path2, plus_ending, content = \
-                download_content(resource_path, ending, resources_path, path)
-            with open(resource_path2, 'wb') as fp:
-                fp.write(content)
-            new_link_path = os.path.join(plus_ending)
-            return new_link_path
-        else:
-            return src
+        new_link_path = \
+            download_content(src, url, resources_path, path)
+        return new_link_path
 
 
 def download_script(script, url, resources_path, path):
     if script.has_attr('src'):
         src = script['src']
-        resource_path, ending = finding_scheme(src, url)
-        if resource_path is not None and ending is not None:
-            resource_path2, plus_ending, content = \
-                download_content(resource_path, ending, resources_path, path)
-            with open(resource_path2, 'wb') as fp:
-                fp.write(content)
-            new_script_path = os.path.join(plus_ending)
-            return new_script_path
-        else:
-            return src
+        new_script_path = \
+            download_content(src, url, resources_path, path)
+        return new_script_path
