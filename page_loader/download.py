@@ -73,20 +73,25 @@ def download_resources(file_path, url, path):
         fp.write(soup.prettify())
 
 
+def download_content(resource_path, ending, resources_path, path):
+    r = requests.get(resource_path + ending, allow_redirects=True)
+    content = r.content
+    res_path_url = (
+            os.path.join(resources_path, url_t_file_path(resource_path))
+            )
+    plus_ending = res_path_url + ending
+    resource_path2 = os.path.join(path, plus_ending)
+    return resource_path2, plus_ending, content
+
 def download_img(img, url, resources_path, path):
     if img.has_attr('src'):
         src = img['src']
         resource_path, ending = finding_scheme(src, url)
         if resource_path is not None and ending is not None:
-            r = requests.get(resource_path + ending, allow_redirects=True)
-            image = r.content
-            res_path_url = (
-                os.path.join(resources_path, url_t_file_path(resource_path))
-            )
-            plus_ending = res_path_url + ending
-            resource_path2 = os.path.join(path, plus_ending)
+            resource_path2, plus_ending, content = \
+                download_content(resource_path, ending, resources_path, path)
             with open(resource_path2, 'wb') as fp:
-                fp.write(image)
+                fp.write(content)
             new_image_path = os.path.join(plus_ending)
             return new_image_path
         else:
@@ -98,15 +103,10 @@ def download_link(link, url, resources_path, path):
         src = link['href']
         resource_path, ending = finding_scheme(src, url)
         if resource_path is not None and ending is not None:
-            r = requests.get(resource_path + ending, allow_redirects=True)
-            link_new = r.content
-            res_path_url = (
-                os.path.join(resources_path, url_t_file_path(resource_path))
-            )
-            plus_ending = res_path_url + ending
-            resource_path2 = os.path.join(path, plus_ending)
+            resource_path2, plus_ending, content = \
+                download_content(resource_path, ending, resources_path, path)
             with open(resource_path2, 'wb') as fp:
-                fp.write(link_new)
+                fp.write(content)
             new_link_path = os.path.join(plus_ending)
             return new_link_path
         else:
@@ -118,15 +118,10 @@ def download_script(script, url, resources_path, path):
         src = script['src']
         resource_path, ending = finding_scheme(src, url)
         if resource_path is not None and ending is not None:
-            r = requests.get(resource_path + ending, allow_redirects=True)
-            script_new = r.content
-            res_path_url = (
-                os.path.join(resources_path, url_t_file_path(resource_path))
-            )
-            plus_ending = res_path_url + ending
-            resource_path2 = os.path.join(path, plus_ending)
+            resource_path2, plus_ending, content = \
+                download_content(resource_path, ending, resources_path, path)
             with open(resource_path2, 'wb') as fp:
-                fp.write(script_new)
+                fp.write(content)
             new_script_path = os.path.join(plus_ending)
             return new_script_path
         else:

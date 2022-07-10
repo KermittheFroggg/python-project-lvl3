@@ -1,0 +1,109 @@
+2022-07-10 14:40:23,445 Started
+2022-07-10 14:40:23,467 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:40:24,464 https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 14:40:24,714 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:40:24,930 https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 14:40:24,951 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:40:26,365 https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 14:40:26,480 was debuged
+2022-07-10 14:40:26,481 Alarm!!!!!
+2022-07-10 14:40:26,481 Finished
+2022-07-10 14:42:49,917 Loader started
+2022-07-10 14:42:49,920 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:42:50,568 https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 14:42:50,574 was debuged
+2022-07-10 14:42:50,575 Alarm!!!!!
+2022-07-10 14:42:50,819 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:42:51,034 https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 14:42:51,051 Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 14:42:51,951 https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 14:42:52,039 was debuged
+2022-07-10 14:42:52,039 Alarm!!!!!
+2022-07-10 14:42:52,039 Loader finished
+15:02:19,202 root INFO Loader started
+15:02:19,259 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+15:02:20,200 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+15:02:20,206 root DEBUG was debuged
+15:02:20,206 root WARNING Alarm!!!!!
+15:02:20,482 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+15:02:20,716 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+15:02:20,728 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+15:02:21,882 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+15:02:21,994 root DEBUG was debuged
+15:02:21,994 root WARNING Alarm!!!!!
+15:02:21,994 root INFO Loader finished
+2022-07-10 15:03:40,194,194 root INFO Loader started
+2022-07-10 15:03:40,197,197 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:03:41,187,187 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 15:03:41,198,198 root DEBUG was debuged
+2022-07-10 15:03:41,199,199 root WARNING Alarm!!!!!
+2022-07-10 15:03:41,444,444 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:03:41,661,661 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 15:03:41,676,676 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:03:42,576,576 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 15:03:42,665,665 root DEBUG was debuged
+2022-07-10 15:03:42,665,665 root WARNING Alarm!!!!!
+2022-07-10 15:03:42,665,665 root INFO Loader finished
+2022-07-10 15:35:45,575,575 root INFO Loader started
+2022-07-10 15:35:45,579,579 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:35:46,579,579 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 15:35:46,849,849 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:35:47,075,75 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 15:35:47,088,88 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:35:47,948,948 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 15:35:48,042,42 root INFO Loader finished
+2022-07-10 15:36:20,645,645 root INFO Loader started
+2022-07-10 15:36:23,496,496 root INFO Loader finished
+2022-07-10 15:39:07,190,190 root INFO Loader started
+2022-07-10 15:39:07,193,193 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:39:08,113,113 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 15:39:08,357,357 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:39:08,587,587 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 15:39:08,606,606 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 15:39:09,789,789 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 15:39:09,880,880 root INFO Loader finished
+2022-07-10 19:52:09,509,509 root INFO Loader started
+2022-07-10 19:52:09,513,513 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 19:52:10,405,405 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 19:52:10,643,643 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 19:52:10,880,880 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 19:52:10,895,895 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 19:52:11,934,934 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 19:52:12,019,19 root INFO Loader finished
+2022-07-10 20:03:48,940,940 root INFO Loader started
+2022-07-10 20:03:48,944,944 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:03:49,872,872 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:05:30,534,534 root INFO Loader started
+2022-07-10 20:05:30,538,538 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:05:31,439,439 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:06:26,757,757 root INFO Loader started
+2022-07-10 20:06:26,761,761 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:06:27,679,679 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:07:02,934,934 root INFO Loader started
+2022-07-10 20:07:02,938,938 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:07:03,943,943 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:07:45,675,675 root INFO Loader started
+2022-07-10 20:07:45,679,679 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:07:46,947,947 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:11:09,426,426 root INFO Loader started
+2022-07-10 20:11:09,430,430 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:11:10,276,276 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:12:06,336,336 root INFO Loader started
+2022-07-10 20:12:06,340,340 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:12:07,173,173 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:14:00,337,337 root INFO Loader started
+2022-07-10 20:14:00,341,341 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:14:01,216,216 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:14:01,466,466 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:14:01,708,708 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 20:14:01,714,714 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:14:02,559,559 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 20:14:02,672,672 root INFO Loader finished
+2022-07-10 20:16:02,333,333 root INFO Loader started
+2022-07-10 20:16:02,337,337 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:16:03,259,259 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-10 20:16:03,488,488 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:16:03,714,714 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-10 20:16:03,731,731 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-10 20:16:04,824,824 urllib3.connectionpool DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-10 20:16:04,917,917 root INFO Loader finished
