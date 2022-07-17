@@ -169,3 +169,1412 @@
 2022-07-10 20:42:13,855, DEBUG Starting new HTTPS connection (1): ru.hexlet.io:443
 2022-07-10 20:42:15,271, DEBUG https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
 2022-07-10 20:42:15,385, INFO Loader finished
+2022-07-10 21:09:39,166, INFO Loader started
+2022-07-10 21:09:39,170, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:39,276, DEBUG https://www.sports.ru:443 "GET /tribuna/blogs/fotoblog/3060148.html HTTP/1.1" 200 None
+2022-07-10 21:09:39,549, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:39,608, DEBUG https://www.sports.ru:443 "GET /tribuna/blogs/fotoblog/3060148.html HTTP/1.1" 200 None
+2022-07-10 21:09:39,624, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:39,767, DEBUG https://www.sports.ru:443 "GET /amp/post/3060148/.html HTTP/1.1" 404 None
+2022-07-10 21:09:39,785, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,040, DEBUG https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-10 21:09:40,052, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,332, DEBUG https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-10 21:09:40,339, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,383, DEBUG https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-10 21:09:40,389, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,444, DEBUG https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-10 21:09:40,451, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,501, DEBUG https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-10 21:09:40,511, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,553, DEBUG https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-10 21:09:40,560, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,613, DEBUG https://www.sports.ru:443 "GET /dynamic_images/post/306/014/8/share/bee6ce_no_text.jpg HTTP/1.1" 200 119802
+2022-07-10 21:09:40,633, DEBUG Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-10 21:09:40,678, DEBUG https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-10 21:09:40,823, INFO Loader finished
+2022-07-11 23:28:39,522 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-11 23:28:40,299 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-11 23:28:40,556 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-11 23:28:40,780 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-11 23:28:40,794 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-11 23:28:41,550 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-12 23:51:47,060 | ERROR | 
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 94, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+2022-07-12 23:55:25,981 | ERROR | ..
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 94, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+2022-07-13 00:09:56,308 | ERROR | 
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 106, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+2022-07-13 00:14:06,717 | ERROR | 
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 94, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+2022-07-13 00:16:29,127 | ERROR | 
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 96, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+2022-07-13 08:43:39,912 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:40,428 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-13 08:43:40,728 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,548 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-13 08:43:41,601 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,718 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-13 08:43:41,734 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,775 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-13 08:43:41,782 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,816 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-13 08:43:41,820 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,854 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-13 08:43:41,858 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,903 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-13 08:43:41,908 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,950 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-13 08:43:41,956 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:41,993 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-13 08:43:41,997 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:42,055 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-13 08:43:42,097 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-13 08:43:42,135 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-14 23:03:24,537 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:03:25,818 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:03:26,059 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:03:26,276 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-14 23:03:26,289 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:03:27,219 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-14 23:04:06,890 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:04:07,712 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:06:16,271 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:06:17,361 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:08:49,767 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:08:50,647 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:11:08,914 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:11:09,760 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:13:14,410 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:13:15,431 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:13:55,046 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:13:55,958 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:15:09,396 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:15:10,424 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:23:09,035 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:23:10,515 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:31:41,007 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:31:41,812 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:33:09,669 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:33:10,331 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:35:32,845 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:35:33,645 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:52:24,307 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:52:25,153 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:56:17,802 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:56:18,652 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:56:54,547 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:56:55,367 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:57:41,428 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:57:41,428 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:57:42,092 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:57:42,092 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-14 23:59:58,904 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-14 23:59:59,605 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:03:13,239 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-15 00:03:13,934 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:05:58,153 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-15 00:05:58,864 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:07:42,639 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-15 00:07:43,397 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:07:43,404 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-15 00:08:16,604 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-15 00:08:17,621 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:08:53,581 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-15 00:08:54,836 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-15 00:08:54,851 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 13:22:36,078 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 13:22:36,936 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 13:22:36,952 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 14:22:42,181 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:22:42,933 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:22:42,941 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 14:23:54,161 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-16 14:23:54,584 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-16 14:23:54,885 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-16 14:23:54,957 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-16 14:23:54,988 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-16 14:23:55,118 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-16 14:23:55,132 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 91, in download_content
+    r.raise_for_status()
+  File "/home/frog/my_env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.sports.ru/amp/post/3060680/.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 58, in download
+    download_resources(file_path, url, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 77, in download_resources
+    link_new_path = download_link(link, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 120, in download_link
+    download_content(src, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 93, in download_content
+    Logger.error("OOps: Something Else",err, exc_info=1)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1474, in error
+    if self.isEnabledFor(ERROR):
+AttributeError: 'str' object has no attribute 'isEnabledFor'
+2022-07-16 14:25:52,956 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:25:53,801 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:25:53,814 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 14:26:05,413 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:26:06,186 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:26:06,426 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:26:06,640 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-16 14:26:06,654 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:26:07,393 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-16 14:36:54,894 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:36:55,756 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:36:55,778 | INFO | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 14:38:00,761 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:38:01,476 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:38:01,498 | WARNING | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-16 14:40:00,218 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-16 14:40:01,154 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-16 14:40:01,167 | ERROR | OOps: try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 56, in download
+    with open(file_path, 'w') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/frog/var/temp/jemp/ru-hexlet-io-courses.html'
+2022-07-17 14:36:01,919 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:36:02,339 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:36:02,603 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:36:02,659 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:36:02,685 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:36:02,826 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:37:42,717 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:37:43,181 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:37:43,422 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:37:43,483 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:37:43,504 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:37:43,608 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:39:13,502 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:39:13,904 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:39:14,172 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:39:14,696 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:39:14,738 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:39:14,854 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:40:40,348 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:40:40,752 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:40:41,005 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:40:41,616 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:40:41,651 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:40:41,833 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:42:37,980 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:38,382 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:42:38,632 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:38,726 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:42:38,746 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:38,870 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:42:38,884 | INFO | Problems with URL
+NoneType: None
+2022-07-17 14:42:38,892 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:38,942 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:42:38,948 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:38,994 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:42:38,999 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,038 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:42:39,043 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,087 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:42:39,103 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,151 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:42:39,157 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,200 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:42:39,205 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,796 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:42:39,862 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:39,911 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:42:55,238 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:55,740 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:42:56,043 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,337 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:42:56,357 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,477 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:42:56,494 | INFO | Problems with URL
+NoneType: None
+2022-07-17 14:42:56,497 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,532 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:42:56,536 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,576 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:42:56,580 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,632 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:42:56,640 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,693 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:42:56,702 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,747 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:42:56,751 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,794 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:42:56,798 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,843 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:42:56,881 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:42:56,937 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:44:10,830 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:44:11,214 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 14:48:56,505 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,031 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:48:57,271 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,606 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:48:57,635 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,774 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:48:57,791 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:48:57,799 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,849 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:48:57,857 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,896 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:48:57,900 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:57,944 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:48:57,948 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:58,003 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:48:58,012 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:58,080 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:48:58,088 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:58,132 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:48:58,137 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:58,676 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:48:58,713 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:48:58,757 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:49:34,197 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:34,591 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:49:34,858 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,260 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:49:35,285 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,402 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:49:35,419 | INFO | Problems with URL
+NoneType: None
+2022-07-17 14:49:35,425 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,473 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:49:35,478 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,518 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:49:35,522 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,567 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:49:35,577 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,643 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:49:35,649 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,691 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:49:35,700 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,753 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:49:35,759 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,810 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:49:35,852 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:49:35,889 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:50:21,694 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:22,235 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:50:22,497 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:22,975 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:50:22,998 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,143 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:50:23,184 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,229 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:50:23,235 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,284 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:50:23,288 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,326 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:50:23,335 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,384 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:50:23,390 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,445 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:50:23,453 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,493 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:50:23,499 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,551 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:50:23,591 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:50:23,639 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:51:10,490 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:10,911 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:51:11,187 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,247 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:51:11,267 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,401 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:51:11,415 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:51:11,418 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,466 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:51:11,472 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,537 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:51:11,541 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,585 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:51:11,590 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,645 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:51:11,652 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,725 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:51:11,730 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,764 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:51:11,769 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,814 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:51:11,852 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:51:11,909 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:52:31,645 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,062 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:52:32,385 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,443 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:52:32,491 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,601 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:52:32,614 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:52:32,620 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,674 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:52:32,684 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,752 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:52:32,764 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,822 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:52:32,833 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,900 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:52:32,912 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:32,972 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:52:32,985 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:33,053 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:52:33,063 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:33,137 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:52:33,168 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:52:33,222 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:23,140 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:23,140 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:23,716 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:23,716 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:23,965 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:23,965 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,034 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:24,034 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:24,058 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,058 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,232 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:24,232 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:24,250 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:24,250 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:24,260 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,260 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,316 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:24,316 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:24,322 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,322 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,365 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:24,365 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:24,369 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,369 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,417 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:24,417 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:24,429 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,429 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,485 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:24,485 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:24,491 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,491 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,534 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:24,534 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:24,540 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,540 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,591 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:24,591 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:24,598 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,598 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,648 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:24,648 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:24,698 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,698 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:24,745 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:24,745 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:49,316 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:49,316 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:49,738 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:49,738 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:50,015 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,015 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,081 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:50,081 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:50,094 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,094 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,234 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:50,234 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:50,249 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:50,249 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:50,258 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,258 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,324 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:50,324 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:50,328 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,328 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,365 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:50,365 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:50,370 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,370 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,411 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:50,411 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:50,415 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,415 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,458 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:50,458 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:50,463 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,463 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,505 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:50,505 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:50,523 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,523 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,560 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:50,560 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:50,564 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,564 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,607 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:50,607 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:50,657 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,657 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:50,754 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:50,754 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:53,497 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:53,497 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:53,815 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:53,815 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:54,135 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,135 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,196 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:54,196 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:53:54,217 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,217 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,332 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:54,332 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:53:54,347 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:54,347 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:53:54,356 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,356 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,408 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:54,408 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:53:54,414 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,414 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,450 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:54,450 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:53:54,454 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,454 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,494 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:54,494 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:53:54,498 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,498 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,564 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:54,564 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:54,571 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,571 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,625 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:54,625 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:53:54,631 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,631 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,664 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:54,664 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:53:54,669 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,669 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,717 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:54,717 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:53:54,758 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,758 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:53:54,813 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:53:54,813 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:54:35,052 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:35,052 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:35,586 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:54:35,586 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:54:35,881 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:35,881 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:35,931 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:54:35,931 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:54:35,945 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:35,945 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:54:36,060 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:54:36,060 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:57:09,480 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:09,480 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:09,950 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:57:09,950 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:57:10,212 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,212 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,267 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:57:10,267 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 14:57:10,293 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,293 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,423 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:57:10,423 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 14:57:10,439 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:57:10,439 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 14:57:10,447 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,447 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,502 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:57:10,502 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 14:57:10,507 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,507 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,555 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:57:10,555 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 14:57:10,560 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,560 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,604 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:57:10,604 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 14:57:10,609 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,609 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,660 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:57:10,660 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:57:10,675 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,675 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,754 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:57:10,754 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 14:57:10,765 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,765 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,806 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:57:10,806 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 14:57:10,812 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,812 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,859 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:57:10,859 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 14:57:10,910 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,910 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 14:57:10,965 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:57:10,965 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 14:57:18,317 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:57:18,317 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:57:18,672 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 14:57:18,672 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 14:57:22,773 | INFO | test started
+2022-07-17 14:57:22,777 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:57:23,632 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 14:57:23,871 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:57:24,089 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 14:57:24,100 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 14:57:24,893 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 14:57:24,971 | INFO | test started
+2022-07-17 14:57:24,973 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 14:57:24,977 | INFO | test started
+2022-07-17 14:57:24,987 | INFO | test started
+2022-07-17 14:57:24,997 | INFO | test started
+2022-07-17 14:57:25,020 | INFO | test started
+2022-07-17 14:57:25,042 | INFO | test started
+2022-07-17 14:57:25,048 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:03:45,343 | INFO | test started
+2022-07-17 15:03:45,348 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:03:46,113 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:03:46,389 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:03:46,619 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:03:46,630 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:03:47,649 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:03:47,722 | INFO | test started
+2022-07-17 15:03:47,724 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:03:47,728 | INFO | test started
+2022-07-17 15:03:47,735 | INFO | test started
+2022-07-17 15:03:47,744 | INFO | test started
+2022-07-17 15:03:47,761 | INFO | test started
+2022-07-17 15:03:47,779 | INFO | test started
+2022-07-17 15:03:47,787 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:05:13,685 | INFO | test started
+2022-07-17 15:05:13,689 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:14,428 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:05:14,675 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:14,896 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:05:14,909 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:15,805 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:05:15,901 | INFO | test started
+2022-07-17 15:05:15,903 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:05:15,907 | INFO | test started
+2022-07-17 15:05:15,916 | INFO | test started
+2022-07-17 15:05:15,927 | INFO | test started
+2022-07-17 15:05:15,948 | INFO | test started
+2022-07-17 15:05:15,972 | INFO | test started
+2022-07-17 15:05:15,977 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:05:32,695 | INFO | test started
+2022-07-17 15:05:32,699 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:33,563 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:05:33,808 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:34,085 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:05:34,100 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:35,040 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:05:35,137 | INFO | test started
+2022-07-17 15:05:35,140 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:05:35,144 | INFO | test started
+2022-07-17 15:05:35,155 | INFO | test started
+2022-07-17 15:05:35,168 | INFO | test started
+2022-07-17 15:05:35,185 | INFO | test started
+2022-07-17 15:05:35,204 | INFO | test started
+2022-07-17 15:05:35,209 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:05:40,754 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:40,754 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:05:41,090 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 15:05:41,090 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 15:07:26,809 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:07:26,809 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:07:27,134 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 15:07:27,134 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 15:07:35,732 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:35,732 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,307 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:07:36,307 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:07:36,593 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,593 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,659 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:07:36,659 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:07:36,672 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,672 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,800 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:07:36,800 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:07:36,830 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:07:36,830 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:07:36,838 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,838 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,888 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 15:07:36,888 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 15:07:36,892 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,892 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,938 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 15:07:36,938 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 15:07:36,943 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:36,943 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,015 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 15:07:37,015 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 15:07:37,021 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,021 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,079 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 15:07:37,079 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 15:07:37,089 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,089 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,180 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 15:07:37,180 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 15:07:37,191 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,191 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,250 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 15:07:37,250 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 15:07:37,254 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,254 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,317 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 15:07:37,317 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/068/0/share/c14985_no_text.jpg HTTP/1.1" 200 198582
+2022-07-17 15:07:37,374 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,374 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:07:37,448 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 15:07:37,448 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 15:07:50,654 | INFO | test started
+2022-07-17 15:07:50,658 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:07:51,882 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:07:52,123 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:07:52,380 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:07:52,390 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:07:53,456 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:07:53,550 | INFO | test started
+2022-07-17 15:07:53,552 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:07:53,557 | INFO | test started
+2022-07-17 15:07:53,567 | INFO | test started
+2022-07-17 15:07:53,575 | INFO | test started
+2022-07-17 15:07:53,597 | INFO | test started
+2022-07-17 15:07:53,614 | INFO | test started
+2022-07-17 15:07:53,618 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:08:54,761 | INFO | test started
+2022-07-17 15:08:54,764 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:08:55,567 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:08:55,805 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:08:56,017 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:08:56,027 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:08:56,872 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:08:56,961 | INFO | test started
+2022-07-17 15:08:56,965 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:08:56,970 | INFO | test started
+2022-07-17 15:08:56,981 | INFO | test started
+2022-07-17 15:08:56,993 | INFO | test started
+2022-07-17 15:08:57,018 | INFO | test started
+2022-07-17 15:08:57,039 | INFO | test started
+2022-07-17 15:08:57,045 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:09:14,943 | INFO | test started
+2022-07-17 15:09:14,947 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:09:15,623 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:09:15,860 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:09:16,114 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:09:16,124 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:09:16,977 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:09:17,071 | INFO | test started
+2022-07-17 15:09:17,073 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:09:17,078 | INFO | test started
+2022-07-17 15:09:17,088 | INFO | test started
+2022-07-17 15:09:17,096 | INFO | test started
+2022-07-17 15:09:17,118 | INFO | test started
+2022-07-17 15:09:17,140 | INFO | test started
+2022-07-17 15:09:17,146 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:09:26,799 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:26,799 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:27,173 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:09:27,173 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:09:27,418 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:27,418 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:27,774 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:09:27,774 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:09:27,812 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:27,812 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:09:27,965 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:09:27,965 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:09:27,979 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:09:27,979 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:43:06,903 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:06,903 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:07,386 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:07,386 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:07,642 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:07,642 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:07,701 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:07,701 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:07,722 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:07,722 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:07,842 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:43:07,842 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:43:07,869 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:43:07,869 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:43:11,328 | INFO | test started
+2022-07-17 15:43:11,331 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:43:12,279 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 15:43:12,515 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:43:12,741 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 15:43:12,753 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 15:43:13,450 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 15:43:13,542 | INFO | test started
+2022-07-17 15:43:13,544 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 15:43:13,548 | INFO | test started
+2022-07-17 15:43:13,556 | INFO | test started
+2022-07-17 15:43:13,567 | INFO | test started
+2022-07-17 15:43:13,583 | INFO | test started
+2022-07-17 15:43:13,602 | INFO | test started
+2022-07-17 15:43:13,609 | INFO | Problems with URL
+NoneType: None
+2022-07-17 15:43:19,572 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:19,572 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:20,440 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:20,440 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:20,696 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:20,696 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:21,076 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:21,076 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:43:21,103 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:21,103 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:43:21,232 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:43:21,232 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:43:21,248 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:43:21,248 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:44:50,445 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:50,445 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:50,993 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:44:50,993 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:44:51,278 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:51,278 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:51,630 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:44:51,630 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:44:51,683 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:51,683 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:44:51,811 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:44:51,811 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:44:51,826 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:44:51,826 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:45:31,610 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:31,610 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:32,064 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:45:32,064 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:45:32,329 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:32,329 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:32,662 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:45:32,662 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 15:45:32,692 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:32,692 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 15:45:32,831 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:45:32,831 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 15:45:32,849 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:45:32,849 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 15:45:32,852 | WARNING | Try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 72, in download
+    download_resources(file_path, url, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 92, in download_resources
+    link_new_path = download_link(link, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 134, in download_link
+    download_content(src, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 107, in download_content
+    raise requests.exceptions.RequestException
+requests.exceptions.RequestException
+2022-07-17 15:45:32,852 | WARNING | Try another directory
+Traceback (most recent call last):
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 72, in download
+    download_resources(file_path, url, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 92, in download_resources
+    link_new_path = download_link(link, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 134, in download_link
+    download_content(src, url, resources_path, path)
+  File "/home/frog/python-project-lvl3/page_loader/download.py", line 107, in download_content
+    raise requests.exceptions.RequestException
+requests.exceptions.RequestException
+2022-07-17 19:10:54,887 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:54,887 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:55,405 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:10:55,405 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:10:55,655 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:55,655 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:55,716 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:10:55,716 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:10:55,734 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:55,734 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:10:55,932 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 19:10:55,932 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 19:10:55,946 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:10:55,946 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:11:12,518 | INFO | test started
+2022-07-17 19:11:12,545 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:11:13,275 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:11:13,290 | INFO | Please, print the appropriate directory
+2022-07-17 19:11:13,358 | INFO | test started
+2022-07-17 19:11:13,360 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:11:13,360 | INFO | Please, print the appropriate directory
+2022-07-17 19:11:13,374 | INFO | test started
+2022-07-17 19:11:13,383 | INFO | test started
+2022-07-17 19:11:13,394 | INFO | test started
+2022-07-17 19:11:13,413 | INFO | test started
+2022-07-17 19:11:13,433 | INFO | test started
+2022-07-17 19:11:13,439 | INFO | Problems with URL
+NoneType: None
+2022-07-17 19:12:59,344 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:12:59,344 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:12:59,728 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:12:59,728 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:12:59,733 | WARNING | Try another directory
+2022-07-17 19:12:59,733 | WARNING | Try another directory
+2022-07-17 19:13:34,274 | INFO | test started
+2022-07-17 19:13:34,276 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:13:35,107 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:13:35,121 | WARNING | Try another directory
+2022-07-17 19:13:35,209 | INFO | test started
+2022-07-17 19:13:35,211 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:13:35,212 | WARNING | Try another directory
+2022-07-17 19:13:35,227 | INFO | test started
+2022-07-17 19:13:35,237 | INFO | test started
+2022-07-17 19:13:35,248 | INFO | test started
+2022-07-17 19:13:35,272 | INFO | test started
+2022-07-17 19:13:35,295 | INFO | test started
+2022-07-17 19:13:35,300 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:18:48,912 | INFO | test started
+2022-07-17 19:18:48,916 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:18:49,720 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:18:49,735 | WARNING | Try another directory
+2022-07-17 19:18:49,792 | INFO | test started
+2022-07-17 19:18:49,794 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:18:49,794 | WARNING | Try another directory
+2022-07-17 19:18:49,810 | INFO | test started
+2022-07-17 19:18:49,819 | INFO | test started
+2022-07-17 19:18:49,830 | INFO | test started
+2022-07-17 19:18:49,846 | INFO | test started
+2022-07-17 19:18:49,865 | INFO | test started
+2022-07-17 19:18:49,871 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:19:16,170 | INFO | test started
+2022-07-17 19:19:16,173 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:19:17,100 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:19:17,112 | WARNING | Try another directory
+2022-07-17 19:19:17,119 | INFO | test started
+2022-07-17 19:19:17,124 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:19:17,125 | WARNING | Try another directory
+2022-07-17 19:19:17,185 | INFO | test started
+2022-07-17 19:19:17,195 | INFO | test started
+2022-07-17 19:19:17,202 | INFO | test started
+2022-07-17 19:19:17,218 | INFO | test started
+2022-07-17 19:19:17,237 | INFO | test started
+2022-07-17 19:19:17,242 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:19:52,068 | INFO | test started
+2022-07-17 19:19:52,071 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:19:52,866 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:19:52,889 | WARNING | Try another directory
+2022-07-17 19:19:52,896 | INFO | test started
+2022-07-17 19:19:52,902 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:19:52,904 | WARNING | Try another directory
+2022-07-17 19:19:52,911 | INFO | test started
+2022-07-17 19:19:52,925 | INFO | test started
+2022-07-17 19:19:52,935 | INFO | test started
+2022-07-17 19:19:52,956 | INFO | test started
+2022-07-17 19:19:52,976 | INFO | test started
+2022-07-17 19:19:52,982 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:21:26,484 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:21:26,484 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:21:26,880 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:21:26,880 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:21:26,894 | WARNING | Try another directory
+2022-07-17 19:21:26,894 | WARNING | Try another directory
+2022-07-17 19:21:41,290 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:41,290 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:41,698 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:21:41,698 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:21:41,925 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:41,925 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:41,993 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:21:41,993 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/voronin/3060680.html HTTP/1.1" 200 None
+2022-07-17 19:21:42,011 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:42,011 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:21:42,203 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 19:21:42,203 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3060680/.html HTTP/1.1" 404 None
+2022-07-17 19:21:42,223 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:21:42,223 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:26:26,284 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:26:26,284 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:26:27,558 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:26:27,558 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:26:27,573 | WARNING | Try another directory
+2022-07-17 19:26:27,573 | WARNING | Try another directory
+2022-07-17 19:27:16,379 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:27:16,379 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:27:17,276 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:27:17,276 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:27:17,291 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:27:17,291 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:28:30,581 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:30,581 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:31,488 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:28:31,488 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:28:31,724 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:31,724 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:31,939 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:28:31,939 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:28:31,952 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:31,952 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:32,901 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:28:32,901 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:28:37,055 | INFO | test started
+2022-07-17 19:28:37,059 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:37,943 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:28:38,180 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:38,398 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:28:38,410 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:28:39,306 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:28:39,423 | INFO | test started
+2022-07-17 19:28:39,425 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:28:39,434 | INFO | test started
+2022-07-17 19:28:39,442 | INFO | test started
+2022-07-17 19:28:39,451 | INFO | test started
+2022-07-17 19:28:39,476 | INFO | test started
+2022-07-17 19:28:39,497 | INFO | test started
+2022-07-17 19:28:39,501 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:29:32,301 | INFO | test started
+2022-07-17 19:29:32,304 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:33,327 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:29:33,564 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:33,783 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:29:33,794 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:34,624 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:29:34,711 | INFO | test started
+2022-07-17 19:29:34,713 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:29:34,716 | INFO | test started
+2022-07-17 19:29:34,729 | INFO | test started
+2022-07-17 19:29:34,741 | INFO | test started
+2022-07-17 19:29:34,762 | INFO | test started
+2022-07-17 19:29:34,783 | INFO | test started
+2022-07-17 19:29:34,789 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:29:36,915 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:36,915 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:37,946 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:29:37,946 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:29:38,181 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:38,181 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:38,393 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:29:38,393 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:29:38,406 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:38,406 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:39,106 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:29:39,106 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:29:43,682 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:43,682 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:29:44,061 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:29:44,061 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:29:44,073 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:29:44,073 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:31:31,357 | INFO | test started
+2022-07-17 19:31:31,361 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:31:32,036 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:31:32,275 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:31:32,489 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:31:32,499 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:31:33,355 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:31:33,443 | INFO | test started
+2022-07-17 19:31:33,445 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:31:33,449 | INFO | test started
+2022-07-17 19:31:33,458 | INFO | test started
+2022-07-17 19:31:33,471 | INFO | test started
+2022-07-17 19:31:33,493 | INFO | test started
+2022-07-17 19:31:33,515 | INFO | test started
+2022-07-17 19:31:33,521 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:31:43,012 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:31:43,012 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:31:43,902 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:31:43,902 | DEBUG | https://ru.hexlet.io:443 "GET /courses/python-advanced-testing/lessons/monkey-patching/theory_unit HTTP/1.1" 200 None
+2022-07-17 19:31:43,916 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:31:43,916 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:32:10,384 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:10,384 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:15,780 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:15,780 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:17,819 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:17,819 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:17,889 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:17,889 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:17,904 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:17,904 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:18,018 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:32:18,018 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:32:18,033 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:32:18,033 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:32:35,691 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:35,691 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:36,992 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:36,992 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:37,822 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:37,822 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:38,400 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:38,400 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:32:38,426 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:38,426 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:32:38,789 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:32:38,789 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:32:39,007 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:32:39,007 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:41:37,091 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:37,091 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:37,879 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:41:37,879 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:41:38,120 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:38,120 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:38,331 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:41:38,331 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:41:38,339 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:38,339 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:41:39,289 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:41:39,289 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:41:48,240 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:48,240 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:48,297 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:41:48,297 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:41:48,507 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:48,507 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:48,853 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:41:48,853 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:41:48,876 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:48,876 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:41:49,083 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:41:49,083 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:41:49,098 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:41:49,098 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:42:47,219 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:47,219 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:47,691 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:42:47,691 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:42:47,953 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:47,953 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:48,020 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:42:48,020 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:42:48,045 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:48,045 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:42:48,185 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:42:48,185 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:42:48,200 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:42:48,200 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:02,518 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:02,518 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:02,833 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:02,833 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:03,202 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:03,202 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:03,272 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:03,272 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:03,288 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:03,288 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:03,413 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:43:03,413 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:43:03,440 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:03,440 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:21,083 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:21,083 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:21,513 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:21,513 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:21,769 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:21,769 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,260 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:22,260 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:43:22,282 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,282 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,413 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:43:22,413 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:43:22,425 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:22,425 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:22,433 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,433 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,478 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 19:43:22,478 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 19:43:22,482 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,482 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,522 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 19:43:22,522 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 19:43:22,530 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,530 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,581 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 19:43:22,581 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 19:43:22,586 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,586 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,635 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:43:22,635 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:43:22,646 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,646 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,704 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:43:22,704 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:43:22,708 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,708 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,745 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 19:43:22,745 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 19:43:22,750 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,750 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,800 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/189/3/share/112c27_no_text.jpg HTTP/1.1" 200 112647
+2022-07-17 19:43:22,800 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/189/3/share/112c27_no_text.jpg HTTP/1.1" 200 112647
+2022-07-17 19:43:22,821 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,821 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:43:22,861 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 19:43:22,861 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 19:43:30,242 | INFO | test started
+2022-07-17 19:43:30,245 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:31,740 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:43:31,978 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:32,197 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:43:32,204 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:33,087 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:43:33,174 | INFO | test started
+2022-07-17 19:43:33,176 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:43:33,180 | INFO | test started
+2022-07-17 19:43:33,189 | INFO | test started
+2022-07-17 19:43:33,201 | INFO | test started
+2022-07-17 19:43:33,219 | INFO | test started
+2022-07-17 19:43:33,240 | INFO | test started
+2022-07-17 19:43:33,248 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:43:54,549 | INFO | test started
+2022-07-17 19:43:54,552 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:55,397 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:43:55,634 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:55,945 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:43:55,959 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:43:56,886 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:43:56,971 | INFO | test started
+2022-07-17 19:43:56,973 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:43:56,977 | INFO | test started
+2022-07-17 19:43:56,986 | INFO | test started
+2022-07-17 19:43:56,996 | INFO | test started
+2022-07-17 19:43:57,019 | INFO | test started
+2022-07-17 19:43:57,041 | INFO | test started
+2022-07-17 19:43:57,047 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:44:02,173 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:02,173 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:02,431 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:44:02,431 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:44:02,663 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:02,663 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:02,937 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:44:02,937 | DEBUG | https://www.sports.ru:443 "GET /tribuna/blogs/nhlhockeynews/3061893.html HTTP/1.1" 200 None
+2022-07-17 19:44:02,961 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:02,961 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,102 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:44:03,102 | DEBUG | https://www.sports.ru:443 "GET /amp/post/3061893/.html HTTP/1.1" 404 None
+2022-07-17 19:44:03,115 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:44:03,115 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 19:44:03,123 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,123 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,311 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 19:44:03,311 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-76.png HTTP/1.1" 200 4357
+2022-07-17 19:44:03,324 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,324 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,423 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 19:44:03,423 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-120.png HTTP/1.1" 200 6627
+2022-07-17 19:44:03,427 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,427 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,521 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 19:44:03,521 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-152.png HTTP/1.1" 200 8179
+2022-07-17 19:44:03,529 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,529 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,588 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:44:03,588 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:44:03,599 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,599 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,664 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:44:03,664 | DEBUG | https://www.sports.ru:443 "GET /apple-touch-icon-1024.png HTTP/1.1" 200 33790
+2022-07-17 19:44:03,672 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,672 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,714 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 19:44:03,714 | DEBUG | https://www.sports.ru:443 "GET /favicon.ico HTTP/1.1" 200 775
+2022-07-17 19:44:03,721 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,721 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,777 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/189/3/share/112c27_no_text.jpg HTTP/1.1" 200 112647
+2022-07-17 19:44:03,777 | DEBUG | https://www.sports.ru:443 "GET /dynamic_images/post/306/189/3/share/112c27_no_text.jpg HTTP/1.1" 200 112647
+2022-07-17 19:44:03,795 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,795 | DEBUG | Starting new HTTPS connection (1): www.sports.ru:443
+2022-07-17 19:44:03,842 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 19:44:03,842 | DEBUG | https://www.sports.ru:443 "GET /rss/topnews.xml HTTP/1.1" 200 None
+2022-07-17 19:44:55,187 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:44:55,187 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:44:56,484 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:44:56,484 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:44:56,503 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:44:56,503 | WARNING | Try another directory
+NoneType: None
+2022-07-17 19:45:02,323 | INFO | test started
+2022-07-17 19:45:02,327 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:45:03,522 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 19:45:03,745 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:45:04,073 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 19:45:04,087 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 19:45:04,873 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 19:45:04,990 | INFO | test started
+2022-07-17 19:45:04,993 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 19:45:04,996 | INFO | test started
+2022-07-17 19:45:05,004 | INFO | test started
+2022-07-17 19:45:05,015 | INFO | test started
+2022-07-17 19:45:05,035 | INFO | test started
+2022-07-17 19:45:05,066 | INFO | test started
+2022-07-17 19:45:05,072 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 20:38:21,436 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 20:38:21,436 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 20:38:22,370 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 20:38:22,370 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 20:38:22,384 | WARNING | Try another directory
+NoneType: None
+2022-07-17 20:38:22,384 | WARNING | Try another directory
+NoneType: None
+2022-07-17 20:38:26,936 | INFO | test started
+2022-07-17 20:38:26,960 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 20:38:27,783 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 20:38:28,051 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 20:38:28,275 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 20:38:28,290 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 20:38:29,241 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 20:38:29,381 | INFO | test started
+2022-07-17 20:38:29,384 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 20:38:29,389 | INFO | test started
+2022-07-17 20:38:29,419 | INFO | test started
+2022-07-17 20:38:29,469 | INFO | test started
+2022-07-17 20:38:29,521 | INFO | test started
+2022-07-17 20:38:29,541 | INFO | test started
+2022-07-17 20:38:29,549 | WARNING | Problems with URL
+NoneType: None
+2022-07-17 21:00:34,232 | INFO | test started
+2022-07-17 21:00:34,340 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 21:00:35,108 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-17 21:00:35,369 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 21:00:35,654 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-17 21:00:35,670 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-17 21:00:36,852 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-17 21:00:36,970 | INFO | test started
+2022-07-17 21:00:36,972 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-17 21:00:36,977 | INFO | test started
+2022-07-17 21:00:37,017 | INFO | test started
+2022-07-17 21:00:37,056 | INFO | test started
+2022-07-17 21:00:37,122 | INFO | test started
+2022-07-17 21:00:37,139 | INFO | test started
+2022-07-17 21:00:37,144 | WARNING | Problems with URL
+NoneType: None

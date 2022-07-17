@@ -1,9 +1,27 @@
+from logging import Logger
+import logging
 import os
+import sys
 import requests
 import re
 from bs4 import BeautifulSoup
 from pathlib import Path
 from urllib.parse import urlparse
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
+
+stderr_handler = logging.StreamHandler(sys.stderr)
+stderr_handler.setLevel(logging.WARNING)
+stderr_handler.setFormatter(formatter)
+
+file_handler = logging.FileHandler('loader.log')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+    
+logger.addHandler(file_handler)
+logger.addHandler(stderr_handler)
 
 
 def url_t_file_path(url):
@@ -44,11 +62,18 @@ def finding_scheme(src, url):
 def download(url, path):
     file_path = os.path.join(path, url_t_file_path(url) + '.html')
     r = requests.get(url, allow_redirects=True)
+    if r.status_code !=200:
+        logger.warning("Problems with URL", exc_info=True)
+        raise requests.ConnectionError
     page = r.text
-    with open(file_path, 'w') as fp:
-        fp.write(page)
-        download_resources(file_path, url, path)
-    return file_path
+    if not os.path.exists(path):
+        logger.warning('Try another directory', exc_info=True)
+        raise FileNotFoundError
+    else:
+        with open(file_path, 'w') as fp:
+            fp.write(page)
+            download_resources(file_path, url, path)
+        return file_path
 
 
 def download_resources(file_path, url, path):
@@ -77,6 +102,9 @@ def download_content(src, url, resources_path, path):
     resource_path, ending = finding_scheme(src, url)
     if resource_path is not None and ending is not None:
         r = requests.get(resource_path + ending, allow_redirects=True)
+        if r.status_code !=200:
+            logger.warning("Problems with URL", exc_info=True)
+            raise requests.ConnectionError
         content = r.content
         res_path_url = (
             os.path.join(resources_path, url_t_file_path(resource_path))
