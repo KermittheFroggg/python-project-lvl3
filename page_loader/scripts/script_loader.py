@@ -5,6 +5,7 @@ from page_loader.parsing import parsing
 import logging
 import sys
 
+
 def main():
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
@@ -17,10 +18,10 @@ def main():
     file_handler = logging.FileHandler('loader.log')
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
-    
+
     logger.addHandler(file_handler)
     logger.addHandler(stderr_handler)
-    
+
     args = parsing()
     download(args['url'], args['output'])
 

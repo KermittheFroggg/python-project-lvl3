@@ -1,4 +1,3 @@
-from logging import Logger
 import logging
 import os
 import sys
@@ -19,7 +18,7 @@ stderr_handler.setFormatter(formatter)
 file_handler = logging.FileHandler('loader.log')
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(formatter)
-    
+
 logger.addHandler(file_handler)
 logger.addHandler(stderr_handler)
 
@@ -62,7 +61,7 @@ def finding_scheme(src, url):
 def download(url, path):
     file_path = os.path.join(path, url_t_file_path(url) + '.html')
     r = requests.get(url, allow_redirects=True)
-    if r.status_code !=200:
+    if r.status_code != 200:
         logger.warning("Problems with URL", exc_info=True)
         raise requests.ConnectionError
     page = r.text
@@ -102,7 +101,7 @@ def download_content(src, url, resources_path, path):
     resource_path, ending = finding_scheme(src, url)
     if resource_path is not None and ending is not None:
         r = requests.get(resource_path + ending, allow_redirects=True)
-        if r.status_code !=200:
+        if r.status_code != 200:
             logger.warning("Problems with URL", exc_info=True)
             raise requests.ConnectionError
         content = r.content
