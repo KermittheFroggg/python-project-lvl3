@@ -124,7 +124,6 @@ def test_errors():
     logger()
     pook.on()
     with tempfile.NamedTemporaryFile() as tmpfilename:
-        temp_path_file = tmpfilename.name
         dir,_  = os.path.split(tmpfilename.name)
         with pytest.raises(requests.exceptions.RequestException) as e:
             pook.get('https://ru.hexlet.io/assets/professions/nodejs.png', reply=200)
