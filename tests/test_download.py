@@ -154,7 +154,7 @@ def test_hexlet_1():
                 fileExt=os.path.splitext(file)[-1]
                 if fileExt == '.jpg':
                     results.append(file)
-        assert len(results) == 3
+        assert len(results) == 2
 
 
 def test_hexlet_2():

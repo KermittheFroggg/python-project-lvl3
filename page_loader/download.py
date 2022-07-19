@@ -68,7 +68,7 @@ def download(url, path):
     with Bar(
         'Downloading html:',
         fill='░',
-        max=3000,
+        max=10,
         suffix='%(percent).1f%% %(eta)ds'
     ) as bar:
         for i in range(10):
@@ -116,7 +116,7 @@ def download_content(src, url, resources_path, path):
         with Bar(
             'Downloading content:',
             fill='⣿',
-            max=20000,
+            max=10,
             suffix='%(percent).1f%% %(eta)ds'
         ) as bar:
             for i in range(10):
