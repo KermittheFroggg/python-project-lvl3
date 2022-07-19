@@ -47,7 +47,7 @@ def finding_scheme(src, url):
     elif urlapass.scheme == '' and urlapass.netloc == '':
         resource_path, ending = os.path.splitext(src)
         resource_path = urlapass_url.scheme + '://' + \
-            urlapass_url.netloc + resource_path  
+            urlapass_url.netloc + resource_path
     elif urlapass.scheme == '' and urlapass.netloc != '':
         if urlapass_url.netloc == urlapass.netloc:
             resource_path, ending = os.path.splitext(src)
@@ -71,7 +71,7 @@ def download(url, path):
         max=3000,
         suffix='%(percent).1f%% %(eta)ds'
     ) as bar:
-        for i in range(3000):
+        for i in range(10):
             page = r.text
             bar.next()
     if not os.path.exists(path):
@@ -119,7 +119,7 @@ def download_content(src, url, resources_path, path):
             max=20000,
             suffix='%(percent).1f%% %(eta)ds'
         ) as bar:
-            for i in range(20000):
+            for i in range(10):
                 content = r.content
                 bar.next()
         res_path_url = (
