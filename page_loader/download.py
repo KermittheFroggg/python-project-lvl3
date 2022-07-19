@@ -6,6 +6,7 @@ import re
 from bs4 import BeautifulSoup
 from pathlib import Path
 from urllib.parse import urlparse
+from progress.bar import Bar
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -64,7 +65,15 @@ def download(url, path):
     if r.status_code != 200:
         logger.warning("Problems with URL", exc_info=True)
         raise requests.ConnectionError
-    page = r.text
+    with Bar(
+        'Downloading html:',
+        fill='░',
+        max=3000,
+        suffix='%(percent).1f%% %(eta)ds'
+    ) as bar:
+        for i in range(3000):
+            page = r.text
+            bar.next()
     if not os.path.exists(path):
         logger.warning('Try another directory', exc_info=True)
         raise FileNotFoundError
@@ -104,7 +113,15 @@ def download_content(src, url, resources_path, path):
         if r.status_code != 200:
             logger.warning("Problems with URL", exc_info=True)
             raise requests.ConnectionError
-        content = r.content
+        with Bar(
+            'Downloading content:',
+            fill='⣿',
+            max=20000,
+            suffix='%(percent).1f%% %(eta)ds'
+        ) as bar:
+            for i in range(20000):
+                content = r.content
+                bar.next()
         res_path_url = (
             os.path.join(resources_path, url_t_file_path(resource_path))
         )

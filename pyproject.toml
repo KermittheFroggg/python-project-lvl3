@@ -19,6 +19,7 @@ flake8 = "^4.0.1"
 pytest-cov = "^3.0.0"
 bs4 = "^0.0.1"
 pook = "^1.0.2"
+progress = "^1.6"
 
 [tool.poetry.dev-dependencies]
 
