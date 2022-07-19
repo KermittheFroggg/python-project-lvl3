@@ -47,7 +47,7 @@ def finding_scheme(src, url):
     elif urlapass.scheme == '' and urlapass.netloc == '':
         resource_path, ending = os.path.splitext(src)
         resource_path = urlapass_url.scheme + '://' + \
-            urlapass_url.netloc + resource_path
+            urlapass_url.netloc + resource_path  
     elif urlapass.scheme == '' and urlapass.netloc != '':
         if urlapass_url.netloc == urlapass.netloc:
             resource_path, ending = os.path.splitext(src)

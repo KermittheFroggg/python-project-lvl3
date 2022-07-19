@@ -133,3 +133,44 @@ def test_errors():
             pook.get('https://ru.hexlet.io/courses', reply=400)
             download('https://ru.hexlet.io/courses', dir)
         assert e is not None
+
+def test_hexlet_1():
+    logger()
+    pook.on()
+    result_path = '/home/frog/fixtures/tests/fixtures/expected/localhost-blog-about.html'
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('/home/frog/fixtures/tests/fixtures/localhost-blog-about.html', tmpfilename.name)
+        url =  'http://localhost/blog/about'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        pook.get('http://localhost/blog/about/assets/styles.css', reply=200)
+        pook.get('http://localhost/photos/me.jpg', reply=200)
+        pook.get('http://localhost/assets/scripts.js', reply=200)
+        pook.get('http://localhost/blog/about.html', reply=200)
+        download_resources(temp_path_file,  url, dir)
+        results = []
+        for _,_,filenames in os.walk(dir):
+            for file in filenames:
+                fileExt=os.path.splitext(file)[-1]
+                if fileExt == '.jpg':
+                    results.append(file)
+        assert len(results) == 2
+
+
+def test_hexlet_2():
+    logger()
+    pook.on()
+    result_path = '/home/frog/fixtures/tests/fixtures/expected/site-com-blog-about.html'
+    with tempfile.NamedTemporaryFile() as tmpfilename:
+        shutil.copyfile('/home/frog/fixtures/tests/fixtures/site-com-blog-about.html', tmpfilename.name)
+        url =  'https://site.com/blog/about'
+        temp_path_file = tmpfilename.name
+        dir,_  = os.path.split(tmpfilename.name)
+        pook.get('https://site.com/blog/about/assets/styles.css', reply=200)
+        pook.get('https://site.com/photos/me.jpg', reply=200)
+        pook.get('https://site.com/assets/scripts.js', reply=200)
+        pook.get('https://site.com/blog/about.html', reply=200)
+        download_resources(temp_path_file,  url, dir)
+        with open(temp_path_file) as rslt:
+            with open(result_path) as result:
+                assert rslt.read() == result.read()
