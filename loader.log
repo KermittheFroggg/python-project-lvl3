@@ -2873,3 +2873,39 @@ NoneType: None
 NoneType: None
 2022-07-20 00:12:56,201 | INFO | test started
 2022-07-20 00:12:56,233 | INFO | test started
+2022-07-20 21:53:00,501 | INFO | test started
+2022-07-20 21:53:00,518 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:53:01,588 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-20 21:53:01,855 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:53:02,071 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-20 21:53:02,086 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:53:02,941 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-20 21:53:03,058 | INFO | test started
+2022-07-20 21:53:03,060 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-20 21:53:03,065 | INFO | test started
+2022-07-20 21:53:03,086 | INFO | test started
+2022-07-20 21:53:03,123 | INFO | test started
+2022-07-20 21:53:03,176 | INFO | test started
+2022-07-20 21:53:03,196 | INFO | test started
+2022-07-20 21:53:03,201 | WARNING | Problems with URL
+NoneType: None
+2022-07-20 21:53:03,205 | INFO | test started
+2022-07-20 21:53:03,232 | INFO | test started
+2022-07-20 21:55:06,994 | INFO | test started
+2022-07-20 21:55:06,999 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:55:07,828 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-20 21:55:08,066 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:55:08,273 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-20 21:55:08,283 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-20 21:55:09,062 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-20 21:55:09,152 | INFO | test started
+2022-07-20 21:55:09,155 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-20 21:55:09,159 | INFO | test started
+2022-07-20 21:55:09,169 | INFO | test started
+2022-07-20 21:55:09,181 | INFO | test started
+2022-07-20 21:55:09,204 | INFO | test started
+2022-07-20 21:55:09,226 | INFO | test started
+2022-07-20 21:55:09,231 | WARNING | Problems with URL
+NoneType: None
+2022-07-20 21:55:09,234 | INFO | test started
+2022-07-20 21:55:09,260 | INFO | test started

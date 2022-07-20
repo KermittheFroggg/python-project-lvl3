@@ -137,9 +137,9 @@ def test_errors():
 def test_hexlet_1():
     logger()
     pook.on()
-    result_path = '/home/frog/python-project-lvl3/tests/fixtures/fixtures/expected/localhost-blog-about.html'
+    result_path = '/home/frog/python-project-lvl3/tests/fixtures/expected/localhost-blog-about.html'
     with tempfile.NamedTemporaryFile() as tmpfilename:
-        shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/fixtures/localhost-blog-about.html', tmpfilename.name)
+        shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/localhost-blog-about.html', tmpfilename.name)
         url =  'http://localhost/blog/about'
         temp_path_file = tmpfilename.name
         dir,_  = os.path.split(tmpfilename.name)
@@ -160,9 +160,9 @@ def test_hexlet_1():
 def test_hexlet_2():
     logger()
     pook.on()
-    result_path = '/home/frog/python-project-lvl3/tests/fixtures/fixtures/expected/site-com-blog-about.html'
+    result_path = '/home/frog/python-project-lvl3/tests/fixtures/expected/site-com-blog-about.html'
     with tempfile.NamedTemporaryFile() as tmpfilename:
-        shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/fixtures/site-com-blog-about.html', tmpfilename.name)
+        shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/site-com-blog-about.html', tmpfilename.name)
         url =  'https://site.com/blog/about'
         temp_path_file = tmpfilename.name
         dir,_  = os.path.split(tmpfilename.name)
