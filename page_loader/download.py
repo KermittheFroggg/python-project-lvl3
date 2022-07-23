@@ -65,15 +65,7 @@ def download(url, path):
     if r.status_code != 200:
         logger.warning("Problems with URL", exc_info=True)
         raise requests.ConnectionError
-    with Bar(
-        'Downloading html:',
-        fill='░',
-        max=10,
-        suffix='%(percent).1f%% %(eta)ds'
-    ) as bar:
-        for i in range(10):
-            page = r.text
-            bar.next()
+    page = r.text
     if not os.path.exists(path):
         logger.warning('Try another directory', exc_info=True)
         raise FileNotFoundError
@@ -92,16 +84,37 @@ def download_resources(file_path, url, path):
         all_scripts = soup.find_all('script')
         resources_path = url_t_file_path(url) + '_files'
         Path(os.path.join(path, resources_path)).mkdir(exist_ok=True)
-        for img in all_img:
-            img_new_path = download_img(img, url, resources_path, path)
-            if img_new_path != '':
-                img['src'] = img_new_path
-        for link in all_links:
-            link_new_path = download_link(link, url, resources_path, path)
-            if link_new_path != '':
-                link['href'] = link_new_path
-        for script in all_scripts:
-            script['src'] = download_script(script, url, resources_path, path)
+        with Bar(
+        'Downloading:',
+        fill='░',
+        max=10,
+        suffix='%(percent).1f%% %(eta)ds'
+        ) as bar:
+            for img in all_img:
+                img_new_path = download_img(img, url, resources_path, path)
+                if img_new_path != '':
+                    img['src'] = img_new_path
+                bar.next()
+        with Bar(
+        'Downloading:',
+        fill='░',
+        max=10,
+        suffix='%(percent).1f%% %(eta)ds'
+        ) as bar:
+            for link in all_links:
+                link_new_path = download_link(link, url, resources_path, path)
+                if link_new_path != '':
+                    link['href'] = link_new_path
+                bar.next()
+        with Bar(
+        'Downloading:',
+        fill='░',
+        max=10,
+        suffix='%(percent).1f%% %(eta)ds'
+        ) as bar:
+            for script in all_scripts:
+                script['src'] = download_script(script, url, resources_path, path)
+                bar.next()
     with open(file_path, 'w') as fp:
         fp.write(soup.prettify())
 
@@ -113,15 +126,7 @@ def download_content(src, url, resources_path, path):
         if r.status_code != 200:
             logger.warning("Problems with URL", exc_info=True)
             raise requests.ConnectionError
-        with Bar(
-            'Downloading content:',
-            fill='⣿',
-            max=10,
-            suffix='%(percent).1f%% %(eta)ds'
-        ) as bar:
-            for i in range(10):
-                content = r.content
-                bar.next()
+        content = r.content
         res_path_url = (
             os.path.join(resources_path, url_t_file_path(resource_path))
         )

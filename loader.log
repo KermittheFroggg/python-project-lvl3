@@ -3069,3 +3069,117 @@ NoneType: None
 2022-07-21 22:59:36,388 | INFO | test started
 2022-07-21 22:59:36,411 | INFO | test started
 2022-07-21 22:59:36,437 | INFO | test started
+2022-07-23 14:55:17,993 | INFO | test started
+2022-07-23 14:55:18,093 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:55:19,153 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 14:55:19,436 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:55:19,657 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 14:55:19,670 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:55:20,520 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 14:55:20,687 | INFO | test started
+2022-07-23 14:55:20,694 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 14:55:20,705 | INFO | test started
+2022-07-23 14:55:20,778 | INFO | test started
+2022-07-23 14:55:20,862 | INFO | test started
+2022-07-23 14:55:20,923 | INFO | test started
+2022-07-23 14:55:20,946 | INFO | test started
+2022-07-23 14:55:20,951 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 14:55:20,954 | INFO | test started
+2022-07-23 14:55:21,004 | INFO | test started
+2022-07-23 14:55:21,090 | INFO | test started
+2022-07-23 14:57:50,275 | INFO | test started
+2022-07-23 14:57:50,279 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:57:51,019 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 14:57:51,260 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:57:51,458 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 14:57:51,468 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:57:52,346 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 14:57:52,477 | INFO | test started
+2022-07-23 14:57:52,480 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 14:57:52,486 | INFO | test started
+2022-07-23 14:57:52,497 | INFO | test started
+2022-07-23 14:57:52,510 | INFO | test started
+2022-07-23 14:57:52,539 | INFO | test started
+2022-07-23 14:57:52,564 | INFO | test started
+2022-07-23 14:57:52,571 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 14:57:52,576 | INFO | test started
+2022-07-23 14:57:52,605 | INFO | test started
+2022-07-23 14:57:52,635 | INFO | test started
+2022-07-23 14:58:08,460 | INFO | test started
+2022-07-23 14:58:08,465 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:58:09,453 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 14:58:09,692 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:58:09,901 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 14:58:09,911 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:58:10,667 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 14:58:10,778 | INFO | test started
+2022-07-23 14:58:10,780 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 14:58:10,784 | INFO | test started
+2022-07-23 14:58:10,792 | INFO | test started
+2022-07-23 14:58:10,804 | INFO | test started
+2022-07-23 14:58:10,827 | INFO | test started
+2022-07-23 14:58:10,853 | INFO | test started
+2022-07-23 14:58:10,859 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 14:58:10,863 | INFO | test started
+2022-07-23 14:58:10,888 | INFO | test started
+2022-07-23 14:58:10,987 | INFO | test started
+2022-07-23 14:59:02,032 | INFO | test started
+2022-07-23 14:59:02,035 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:59:02,771 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 14:59:03,014 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:59:03,252 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 14:59:03,262 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 14:59:04,508 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 14:59:04,613 | INFO | test started
+2022-07-23 14:59:04,617 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 14:59:04,622 | INFO | test started
+2022-07-23 14:59:04,631 | INFO | test started
+2022-07-23 14:59:04,647 | INFO | test started
+2022-07-23 14:59:04,670 | INFO | test started
+2022-07-23 14:59:04,696 | INFO | test started
+2022-07-23 14:59:04,702 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 14:59:04,707 | INFO | test started
+2022-07-23 14:59:04,739 | INFO | test started
+2022-07-23 14:59:04,835 | INFO | test started
+2022-07-23 18:24:06,611 | INFO | test started
+2022-07-23 18:24:06,780 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:07,834 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 18:24:08,074 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:08,287 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 18:24:08,302 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:09,061 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 18:24:09,246 | INFO | test started
+2022-07-23 18:24:09,254 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 18:24:09,266 | INFO | test started
+2022-07-23 18:24:09,368 | INFO | test started
+2022-07-23 18:24:09,570 | INFO | test started
+2022-07-23 18:24:09,627 | INFO | test started
+2022-07-23 18:24:09,649 | INFO | test started
+2022-07-23 18:24:09,654 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 18:24:09,658 | INFO | test started
+2022-07-23 18:24:09,782 | INFO | test started
+2022-07-23 18:24:09,875 | INFO | test started
+2022-07-23 18:24:34,034 | INFO | test started
+2022-07-23 18:24:34,136 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:34,929 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-23 18:24:35,171 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:35,377 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-23 18:24:35,392 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-23 18:24:36,210 | DEBUG | https://ru.hexlet.io:443 "GET /courses.html HTTP/1.1" 200 None
+2022-07-23 18:24:36,348 | INFO | test started
+2022-07-23 18:24:36,354 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-23 18:24:36,366 | INFO | test started
+2022-07-23 18:24:36,402 | INFO | test started
+2022-07-23 18:24:36,412 | INFO | test started
+2022-07-23 18:24:36,430 | INFO | test started
+2022-07-23 18:24:36,449 | INFO | test started
+2022-07-23 18:24:36,454 | WARNING | Problems with URL
+NoneType: None
+2022-07-23 18:24:36,458 | INFO | test started
+2022-07-23 18:24:36,483 | INFO | test started
+2022-07-23 18:24:36,507 | INFO | test started

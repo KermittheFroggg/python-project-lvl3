@@ -162,7 +162,6 @@ def test_hexlet_1_1():
     file_name = 'site-com-blog-about.html'
     dir= os.path.join(os.getcwd(), temp_dir.name)
     temp_path_file = os.path.join(dir, file_name)
-
     shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/site-com-blog-about.html', temp_path_file)
     pook.get('https://site.com/blog/about/assets/styles.css', reply=200)
     pook.get('https://site.com/photos/me.jpg', reply=200)
