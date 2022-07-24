@@ -23,43 +23,8 @@ logger.addHandler(file_handler)
 logger.addHandler(stderr_handler)
 
 
-def url_t_file_path(url):
-    file_path = url.split('//')
-    file_path = re.sub(r'[\W_]+', '-', file_path[1])
-    return file_path
-
-
-def diff_netloc(urlapass_url_netloc, urlapass_netloc, src):
-    if urlapass_url_netloc == urlapass_netloc:
-        resource_path, ending = os.path.splitext(src)
-    else:
-        resource_path, ending = None, None
-    return resource_path, ending
-
-
-def finding_scheme(src, url):
-    urlapass = urlparse(src)
-    urlapass_url = urlparse(url)
-    if urlapass.scheme != '' and urlapass.netloc != '':
-        resource_path, ending = \
-            diff_netloc(urlapass_url.netloc, urlapass.netloc, src)
-    elif urlapass.scheme == '' and urlapass.netloc == '':
-        resource_path, ending = os.path.splitext(src)
-        resource_path = urlapass_url.scheme + '://' + \
-            urlapass_url.netloc + resource_path
-    elif urlapass.scheme == '' and urlapass.netloc != '':
-        if urlapass_url.netloc == urlapass.netloc:
-            resource_path, ending = os.path.splitext(src)
-            resource_path = urlapass_url.scheme + ':' + resource_path
-        else:
-            resource_path, ending = None, None
-    if ending == '':
-        ending = '.html'
-    return resource_path, ending
-
-
 def download(url, path):
-    file_path = os.path.join(path, url_t_file_path(url) + '.html')
+    html_file_path = os.path.join(path, url_t_file_path(url) + '.html')
     r = requests.get(url, allow_redirects=True)
     if r.status_code != 200:
         logger.warning("Problems with URL", exc_info=True)
@@ -68,86 +33,130 @@ def download(url, path):
     if not os.path.exists(path):
         logger.warning('Try another directory', exc_info=True)
         raise FileNotFoundError
-    with open(file_path, 'w') as fp:
+    with open(html_file_path, 'w') as fp:
         fp.write(page)
-    download_resources(file_path, url, path)
+    download_resources(html_file_path, url, path)
+    return html_file_path
+
+
+def url_t_file_path(url):
+    file_path = url.split('//')
+    file_path = re.sub(r'[\W_]+', '-', file_path[1])
     return file_path
 
 
-def download_resources(file_path, url, path):
-    with open(file_path) as fp:
+def download_resources(html_file_path, url, path):
+    with open(html_file_path) as fp:
         soup = BeautifulSoup(fp, 'html.parser')
         all_img = soup.find_all('img')
         all_links = soup.find_all('link')
         all_scripts = soup.find_all('script')
-        resources_path = url_t_file_path(url) + '_files'
-        if not os.path.exists(os.path.join(path, resources_path)):
-            os.mkdir(os.path.join(path, resources_path))
+        folder_with_resources = url_t_file_path(url) + '_files'
+        if not os.path.exists(os.path.join(path, folder_with_resources)):
+            os.mkdir(os.path.join(path, folder_with_resources))
         with Bar('Downloading:', fill='░') as bar:
             for img in all_img:
-                img_new_path = download_img(img, url, resources_path, path)
-                if img_new_path != '':
-                    img['src'] = img_new_path
+                new_value_for_img = download_img(img, url, folder_with_resources, path)
+                if new_value_for_img != '':
+                    img['src'] = new_value_for_img
                 bar.next()
         with Bar('Downloading:', fill='░') as bar:
             for link in all_links:
-                link_new_path = download_link(link, url, resources_path, path)
-                if link_new_path != '':
-                    link['href'] = link_new_path
+                new_value_for_link = download_link(link, url, folder_with_resources, path)
+                if new_value_for_link != '':
+                    link['href'] = new_value_for_link
                 bar.next()
         with Bar('Downloading:', fill='░') as bar:
             for script in all_scripts:
-                script['src'] = download_script(
-                    script, url, resources_path, path)
+                new_value_for_script = download_script(script, url, folder_with_resources, path)
+                if new_value_for_script != '':
+                    script['src'] = new_value_for_script
                 bar.next()
-    with open(file_path, 'w') as fp:
+    with open(html_file_path, 'w') as fp:
         fp.write(soup.prettify())
 
 
-def download_content(src, url, resources_path, path):
-    resource_path, ending = finding_scheme(src, url)
-    print('!', resource_path)
-    if resource_path is not None and ending is not None:
-        r = requests.get(resource_path + ending, allow_redirects=True)
+def download_img(img, url, folder_with_resources, path):
+    if img.has_attr('src'):
+        old_value_of_resource = img['src']
+        new_value_of_resource = \
+            download_content(old_value_of_resource, url, folder_with_resources, path)
+        return new_value_of_resource
+
+
+def download_link(link, url, folder_with_resources, path):
+    if link.has_attr('href'):
+        old_value_of_resource = link['href']
+        new_value_of_resource = \
+            download_content(old_value_of_resource, url, folder_with_resources, path)
+        return new_value_of_resource
+
+
+def download_script(script, url, folder_with_resources, path):
+    if script.has_attr('src'):
+        old_value_of_resource = script['src']
+        new_value_of_resource = \
+            download_content(old_value_of_resource, url, folder_with_resources, path)
+        return new_value_of_resource
+
+
+def download_content(old_value_of_resource, url, folder_with_resources, path):
+    url_without_ending, ending = finding_scheme(old_value_of_resource, url)
+    if url_without_ending is not None and ending is not None:
+        r = requests.get(url_without_ending + ending, allow_redirects=True)
         if r.status_code != 200:
             logger.warning("Problems with URL", exc_info=True)
             raise requests.ConnectionError
         content = r.content
-        res_path_url = (
-            os.path.join(resources_path, url_t_file_path(resource_path))
+        folder_and_name_of_resource = (
+            os.path.join(folder_with_resources, url_t_file_path(url_without_ending))
         )
-        plus_ending = res_path_url + ending
-        resource_path2 = os.path.join(path, plus_ending)
-        with open(resource_path2, 'wb') as fp:
+        resource_path_without_path = folder_and_name_of_resource + ending
+        full_resource_path = os.path.join(path, resource_path_without_path)
+        with open(full_resource_path, 'wb') as fp:
             fp.write(content)
-        new_content_path = os.path.join(plus_ending)
-        return new_content_path
+        new_value_of_resource = resource_path_without_path
+        return new_value_of_resource
     else:
-        return src
+        return old_value_of_resource
 
 
-def download_img(img, url, resources_path, path):
-    if img.has_attr('src'):
-        src = img['src']
-        print('%', src)
-        new_image_path = \
-            download_content(src, url, resources_path, path)
-        return new_image_path
+def finding_scheme(old_value_of_resource, url):
+    urlapass_old_value_of_resource = urlparse(old_value_of_resource)
+    urlapass_url = urlparse(url)
+    if urlapass_old_value_of_resource.scheme != '' and urlapass_old_value_of_resource.netloc != '':
+        url_without_ending, ending = \
+            diff_netloc(
+                urlapass_url.netloc, urlapass_old_value_of_resource.netloc,
+                old_value_of_resource
+            )
+    elif urlapass_old_value_of_resource.scheme == '' and urlapass_old_value_of_resource.netloc == '':
+        url_without_ending, ending = os.path.splitext(old_value_of_resource)
+        url_without_ending = urlapass_url.scheme + '://' + \
+            urlapass_url.netloc + url_without_ending
+    elif urlapass_old_value_of_resource.scheme == '' and urlapass_old_value_of_resource.netloc != '':
+        if urlapass_url.netloc == urlapass_old_value_of_resource.netloc:
+            url_without_ending, ending = os.path.splitext(old_value_of_resource)
+            url_without_ending = urlapass_url.scheme + ':' + url_without_ending
+        else:
+            url_without_ending, ending = None, None
+    if ending == '':
+        ending = '.html'
+    return url_without_ending, ending
 
 
-def download_link(link, url, resources_path, path):
-    if link.has_attr('href'):
-        src = link['href']
-        print('%', src)
-        new_link_path = \
-            download_content(src, url, resources_path, path)
-        return new_link_path
+def diff_netloc(urlapass_url_netloc, urlapass_netloc, src):
+    if urlapass_url_netloc == urlapass_netloc:
+        url_without_ending, ending = os.path.splitext(src)
+    else:
+        url_without_ending, ending = None, None
+    return url_without_ending, ending
 
 
-def download_script(script, url, resources_path, path):
-    if script.has_attr('src'):
-        src = script['src']
-        print('%', src)
-        new_script_path = \
-            download_content(src, url, resources_path, path)
-        return new_script_path
+
+
+
+
+
+
+

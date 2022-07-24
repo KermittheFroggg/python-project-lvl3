@@ -154,6 +154,24 @@ def test_hexlet_1():
     assert len(os.listdir(dir)) == 2
     assert len(os.listdir(os.path.join(dir, ASSETS_DIR_NAME))) == 4
 
+def test_hexlet_1_2():
+    logger()
+    pook.on()
+    temp_dir = tempfile.TemporaryDirectory(dir=os.getcwd())
+    url =  'https://site.com/blog/about'
+    file_name = 'site-com-blog-about.html'
+    dir= os.path.join(os.getcwd(), temp_dir.name)
+    temp_path_file = os.path.join(dir, file_name)
+    shutil.copyfile('/home/frog/python-project-lvl3/tests/fixtures/site-com-blog-about.html', temp_path_file)
+    pook.get('https://site.com/blog/about/assets/styles.css', reply=200)
+    pook.get('https://site.com/photos/me.jpg', reply=200)
+    pook.get('https://site.com/assets/scripts.js', reply=200)
+    pook.get('https://site.com/blog/about.html', reply=200)
+    download_resources(temp_path_file,  url, dir)
+    ASSETS_DIR_NAME = 'site-com-blog-about_files'
+    assert len(os.listdir(dir)) == 2
+    assert len(os.listdir(os.path.join(dir, ASSETS_DIR_NAME))) == 4
+
 
 def test_hexlet_2():
     logger()
