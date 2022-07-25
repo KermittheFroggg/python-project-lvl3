@@ -4879,3 +4879,18 @@ NoneType: None
 2022-07-25 23:48:52,512 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
 2022-07-25 23:48:52,525 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
 2022-07-25 23:48:53,238 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:51:45,366 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:51:46,023 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:51:46,260 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:51:46,473 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-25 23:51:46,487 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:51:47,229 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:58:36,015 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:58:36,967 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:58:36,986 | INFO | requested url: https://ru.hexlet.io/courses
+2022-07-25 23:58:36,987 | INFO | output path: /home/frog/var/temp
+2022-07-25 23:58:36,987 | INFO | write html file: /home/frog/var/temp/ru-hexlet-io-courses.html
+2022-07-25 23:58:37,231 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:58:37,444 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-25 23:58:37,460 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:58:38,202 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None

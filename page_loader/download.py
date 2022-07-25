@@ -1,6 +1,5 @@
 import logging
 import os
-import sys
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -20,6 +19,9 @@ def download(url, path):
     if not os.path.exists(path):
         logger.info('Try another directory', exc_info=True)
         raise FileNotFoundError
+    logger.info(f'requested url: {url}')
+    logger.info(f'output path: {path}')
+    logger.info(f'write html file: {html_file_path}')
     with open(html_file_path, 'w') as fp:
         fp.write(page)
     download_resources(html_file_path, url, path)
