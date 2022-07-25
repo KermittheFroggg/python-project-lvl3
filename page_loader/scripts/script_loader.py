@@ -12,7 +12,7 @@ def main():
     formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
 
     stderr_handler = logging.StreamHandler(sys.stderr)
-    stderr_handler.setLevel(logging.WARNING)
+    stderr_handler.setLevel(logging.INFO)
     stderr_handler.setFormatter(formatter)
 
     file_handler = logging.FileHandler('loader.log')
