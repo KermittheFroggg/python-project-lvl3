@@ -4873,3 +4873,9 @@ NoneType: None
 2022-07-25 23:42:44,817 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
 2022-07-25 23:42:45,604 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
 2022-07-25 23:42:45,604 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:48:51,271 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:48:51,987 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:48:52,220 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:48:52,512 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-25 23:48:52,525 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:48:53,238 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
