@@ -27,11 +27,11 @@ def download(url, path):
     html_file_path = os.path.join(path, url_t_file_path(url) + '.html')
     r = requests.get(url, allow_redirects=True)
     if r.status_code != 200:
-        logger.warning("Problems with URL", exc_info=True)
+        logger.info("Problems with URL", exc_info=True)
         raise requests.ConnectionError
     page = r.text
     if not os.path.exists(path):
-        logger.warning('Try another directory', exc_info=True)
+        logger.info('Try another directory', exc_info=True)
         raise FileNotFoundError
     with open(html_file_path, 'w') as fp:
         fp.write(page)
@@ -109,7 +109,7 @@ def download_content(old_value_of_resource, url, folder_with_resources, path):
         else:
             r = requests.get(url_without_ending, allow_redirects=True)
         if r.status_code != 200:
-            logger.warning("Problems with URL", exc_info=True)
+            logger.info("Problems with URL", exc_info=True)
             raise requests.ConnectionError
         content = r.content
         folder_and_name_of_resource = (

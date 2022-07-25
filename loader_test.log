@@ -13518,3 +13518,80 @@ NoneType: None
 2022-07-25 23:14:23,716 | INFO | test started
 2022-07-25 23:14:23,716 | INFO | test started
 2022-07-25 23:14:23,716 | INFO | test started
+2022-07-25 23:19:48,413 | INFO | test started
+2022-07-25 23:19:48,416 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:19:49,213 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:19:49,460 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:19:49,677 | DEBUG | https://ru.hexlet.io:443 "GET /lessons.rss HTTP/1.1" 200 None
+2022-07-25 23:19:49,688 | DEBUG | Starting new HTTPS connection (1): ru.hexlet.io:443
+2022-07-25 23:19:50,441 | DEBUG | https://ru.hexlet.io:443 "GET /courses HTTP/1.1" 200 None
+2022-07-25 23:19:50,521 | INFO | test started
+2022-07-25 23:19:50,521 | INFO | test started
+2022-07-25 23:19:50,524 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-25 23:19:50,524 | DEBUG | GET https://ru.hexlet.io/courses 200
+2022-07-25 23:19:50,529 | INFO | test started
+2022-07-25 23:19:50,529 | INFO | test started
+2022-07-25 23:19:50,529 | INFO | test started
+2022-07-25 23:19:50,538 | INFO | test started
+2022-07-25 23:19:50,538 | INFO | test started
+2022-07-25 23:19:50,538 | INFO | test started
+2022-07-25 23:19:50,538 | INFO | test started
+2022-07-25 23:19:50,552 | INFO | test started
+2022-07-25 23:19:50,552 | INFO | test started
+2022-07-25 23:19:50,552 | INFO | test started
+2022-07-25 23:19:50,552 | INFO | test started
+2022-07-25 23:19:50,552 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,574 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,595 | INFO | test started
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,601 | INFO | Problems with URL
+NoneType: None
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,605 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,630 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
+2022-07-25 23:19:50,659 | INFO | test started
