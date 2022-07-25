@@ -102,8 +102,12 @@ def download_script(script, url, folder_with_resources, path):
 
 def download_content(old_value_of_resource, url, folder_with_resources, path):
     url_without_ending, ending = finding_scheme(old_value_of_resource, url)
+
     if url_without_ending is not None and ending is not None:
-        r = requests.get(url_without_ending + ending, allow_redirects=True)
+        if ending != '.html':
+            r = requests.get(url_without_ending + ending, allow_redirects=True)
+        else:
+            r = requests.get(url_without_ending, allow_redirects=True)
         if r.status_code != 200:
             logger.warning("Problems with URL", exc_info=True)
             raise requests.ConnectionError

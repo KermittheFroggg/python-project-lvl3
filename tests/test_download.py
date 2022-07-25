@@ -92,7 +92,7 @@ def test_link_script():
         pook.get('https://ru.hexlet.io/assets/professions/nodejs.png', reply=200)
         pook.get('https://ru.hexlet.io/assets/application.css', reply=200)
         pook.get('https://ru.hexlet.io/packs/js/runtime.js', reply=200)
-        pook.get('https://ru.hexlet.io/courses.html', reply=200)
+        pook.get('https://ru.hexlet.io/courses', reply=200)
         download_resources(temp_path_file,  url, dir)
         with open(temp_path_file) as rslt:
             with open(result_path) as result:
@@ -110,7 +110,7 @@ def test_link_script_files():
         pook.get('https://ru.hexlet.io/assets/professions/nodejs.png', reply=200)
         pook.get('https://ru.hexlet.io/assets/application.css', reply=200)
         pook.get('https://ru.hexlet.io/packs/js/runtime.js', reply=200)
-        pook.get('https://ru.hexlet.io/courses.html', reply=200)
+        pook.get('https://ru.hexlet.io/courses', reply=200)
         download_resources(temp_path_file,  url, dir)
         results = []
         for _,_,filenames in os.walk(dir):
@@ -130,7 +130,6 @@ def test_errors():
             pook.get('https://ru.hexlet.io/assets/professions/nodejs.png', reply=200)
             pook.get('https://ru.hexlet.io/assets/application.css', reply=200)
             pook.get('https://ru.hexlet.io/packs/js/runtime.js', reply=200)
-            pook.get('https://ru.hexlet.io/courses.html', reply=200)
             pook.get('https://ru.hexlet.io/courses', reply=400)
             download('https://ru.hexlet.io/courses', dir)
         assert e is not None
@@ -148,7 +147,7 @@ def test_hexlet_1():
     pook.get('http://localhost/blog/about/assets/styles.css', reply=200)
     pook.get('http://localhost/photos/me.jpg', reply=200)
     pook.get('http://localhost/assets/scripts.js', reply=200)
-    pook.get('http://localhost/blog/about.html', reply=200)
+    pook.get('http://localhost/blog/about', reply=200)
     download_resources(temp_path_file,  url, dir)
     ASSETS_DIR_NAME = 'localhost-blog-about_files'
     assert len(os.listdir(dir)) == 2
@@ -166,7 +165,7 @@ def test_hexlet_1_2():
     pook.get('https://site.com/blog/about/assets/styles.css', reply=200)
     pook.get('https://site.com/photos/me.jpg', reply=200)
     pook.get('https://site.com/assets/scripts.js', reply=200)
-    pook.get('https://site.com/blog/about.html', reply=200)
+    pook.get('https://site.com/blog/about', reply=200)
     download_resources(temp_path_file,  url, dir)
     ASSETS_DIR_NAME = 'site-com-blog-about_files'
     assert len(os.listdir(dir)) == 2
@@ -185,7 +184,7 @@ def test_hexlet_2():
         pook.get('https://site.com/blog/about/assets/styles.css', reply=200)
         pook.get('https://site.com/photos/me.jpg', reply=200)
         pook.get('https://site.com/assets/scripts.js', reply=200)
-        pook.get('https://site.com/blog/about.html', reply=200)
+        pook.get('https://site.com/blog/about', reply=200)
         download_resources(temp_path_file,  url, dir)
         with open(temp_path_file) as rslt:
             with open(result_path) as result:
