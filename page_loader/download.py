@@ -43,37 +43,20 @@ def download_resources(html_file_path, url, path):
         folder_with_resources = url_t_file_path(url) + '_files'
         if not os.path.exists(os.path.join(path, folder_with_resources)):
             os.mkdir(os.path.join(path, folder_with_resources))
-        for_lint(all_img,
-                 all_links,
-                 all_scripts,
-                 url,
-                 folder_with_resources,
-                 path)
+        download_each_img(all_img, url, folder_with_resources, path)
+        download_each_link(all_links, url, folder_with_resources, path)
+        download_each_script(all_scripts, url, folder_with_resources, path)
     with open(html_file_path, 'w') as fp:
         fp.write(soup.prettify())
 
 
-def for_lint(all_img, all_links, all_scripts, url, folder_with_resources, path):
+def download_each_img(all_img, url, folder_with_resources, path):
     with Bar('Downloading:', fill='░') as bar:
         for img in all_img:
             new_value_for_img = \
                 download_img(img, url, folder_with_resources, path)
             if new_value_for_img != '':
                 img['src'] = new_value_for_img
-            bar.next()
-    with Bar('Downloading:', fill='░') as bar:
-        for link in all_links:
-            new_value_for_link = \
-                download_link(link, url, folder_with_resources, path)
-            if new_value_for_link != '':
-                link['href'] = new_value_for_link
-            bar.next()
-    with Bar('Downloading:', fill='░') as bar:
-        for script in all_scripts:
-            new_value_for_script = \
-                download_script(script, url, folder_with_resources, path)
-            if new_value_for_script != '':
-                script['src'] = new_value_for_script
             bar.next()
 
 
@@ -88,6 +71,16 @@ def download_img(img, url, folder_with_resources, path):
         return new_value_of_resource
 
 
+def download_each_link(all_links, url, folder_with_resources, path):
+    with Bar('Downloading:', fill='░') as bar:
+        for link in all_links:
+            new_value_for_link = \
+                download_link(link, url, folder_with_resources, path)
+            if new_value_for_link != '':
+                link['href'] = new_value_for_link
+            bar.next()
+
+
 def download_link(link, url, folder_with_resources, path):
     if link.has_attr('href'):
         old_value_of_resource = link['href']
@@ -97,6 +90,16 @@ def download_link(link, url, folder_with_resources, path):
                              folder_with_resources,
                              path)
         return new_value_of_resource
+
+
+def download_each_script(all_scripts, url, folder_with_resources, path):
+    with Bar('Downloading:', fill='░') as bar:
+        for script in all_scripts:
+            new_value_for_script = \
+                download_script(script, url, folder_with_resources, path)
+            if new_value_for_script != '':
+                script['src'] = new_value_for_script
+            bar.next()
 
 
 def download_script(script, url, folder_with_resources, path):
